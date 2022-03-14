@@ -7,12 +7,13 @@
 }
 
 .wrapper {
-  /* max-width: 780px; */
+  max-width: 900px;
   margin: 0 auto;
 }
 
+/* *** Header *** */
+
 header {
-  height: 3em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,14 +21,54 @@ header {
 }
 
 .header-logo {
+  padding: 8px;
   color: #f9faf8;
   font-size: 24px;
 }
 
 nav ul {
+  padding: 8px;
   display: flex;
   justify-content: space-evenly;
   gap: 1em;
   color: #e5e7eb;
   font-size: 18px;
+}
+
+/* *** Hero section *** */
+.hero {
+  padding: 50px 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f2937;
+  color:#f9faf8;
+}
+
+.title {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero p {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+button {
+  margin: 8px;
+  padding: 8px 32px;
+  border-radius: 8px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
+
+.image {
+  flex: 1 0 50%;
+}
+
+.image img {
+  min-width: 400px;
+  min-height: 250px;
+  background-color: antiquewhite;
 }
