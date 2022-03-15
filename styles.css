@@ -7,17 +7,17 @@
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid yellow;
 }
 
 /* *** Header *** */
 
-header {
-  padding: 18px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+header {  
   background-color: #1f2937;
 }
 
@@ -28,7 +28,7 @@ header {
 
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 1em;
   color: #e5e7eb;
   font-size: 18px;
