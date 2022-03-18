@@ -243,32 +243,27 @@ footer p {
   }
   
   .hero {
-    padding: 40px 0;
-    height: 330px;
+    padding: 0;
     background: url(desired-outcome.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
-  /* ***TODO*** */
-  /* Fix .text-div. It is not centered inside wrapper */
-
   .hero .wrapper {
     padding: 0 0;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 310px;
   }
 
-  /* .text {
+  .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 30px;
-    justify-self: center;
-    align-self: center;
-  } */
+    align-items: center;
+  }
 
   .title {
+    margin-top: 20px;
     font-size: 25px;
   }
 
@@ -279,8 +274,10 @@ footer p {
 
   .hero button {
     margin: 0;
+    margin-bottom: 20px;
     background-color: #e5e7eb;
     color:#3882f6;
+    width: 50%;
   }
 
   .illustrations h2 {
