@@ -8,22 +8,26 @@
 }
 
 .wrapper {
-  max-width: 1000px;
   margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 32px;
 }
 
 /* *** Header *** */
 
 header {  
   background-color: #1f2937;
+  padding: 10px;
 }
 
 .header-logo {
   color: #f9faf8;
   font-size: 24px;
+  padding-right: 15px;
 }
 
 nav ul {
@@ -48,7 +52,7 @@ section {
 }
 
 .title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   color: #f9faf8;
   font-size: 48px;
   font-weight: 900;
@@ -62,17 +66,19 @@ section {
 button {
   margin: 20px 0;
   padding: 10px 40px;
+  min-width: 130px;
   border-radius: 8px;
   background-color: #3882f6;
   color: #e5e7eb;
   font-weight: 900;
 }
 
-.image {
+.hero-image {
   flex: 1 1 50%;
 }
 
 /* *** Illustration section *** */
+
 .illustrations {
   text-align: center;
 }
@@ -86,6 +92,7 @@ button {
 
 .item {
   max-width: 150px;
+  flex: 1 1 auto;
 }
 
 .item img {
@@ -94,6 +101,7 @@ button {
 }
 
 /* *** Testimonial section *** */
+
 .testimonial {
   background-color: #e5e7eb;
 }
@@ -106,8 +114,8 @@ blockquote {
 }
 
 /* *** Sign up section *** */
+
 .sign-up {
-  padding: 80px 0;
   color:#e5e7eb;
 }
 
@@ -116,6 +124,7 @@ blockquote {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 32px;
   background-color: #3882f6;
 }
 
@@ -126,10 +135,12 @@ blockquote {
 
 .sign-up button {
   border: 2px solid #e5e7eb;
+  flex-grow: 0;
 }
 
 
 /* *** Footer *** */
+
 footer {
   padding: 18px;
   background-color: #1f2937;
@@ -139,4 +150,150 @@ footer {
 
 footer p {
   width: 100%;
+}
+
+/* *** Small screensizes *** */
+
+/* *** WIDTH < 800px *** */
+
+@media (max-width: 800px) {
+  * {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .illustrations h2 {
+    font-size: 25px;
+  }
+
+  blockquote {
+    font-size: 25px;
+  }
+
+  .sign-up .container {
+    padding: 32px 50px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}
+
+/* *** WIDTH < 715px *** */
+
+@media (max-width: 715px) {
+  section {
+    padding: 50px 0;
+  }
+    
+  .hero .wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    padding: 0;
+    text-align: center;
+  }
+
+  .illustrations .wrapper {
+    gap: 5px;
+  }
+}
+
+/* *** WIDTH < 600px *** */
+
+@media (max-width: 600px) {
+  .illustrations .wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sign-up .container {
+    padding: 20px;
+    flex-direction: column;
+    gap: 0;
+    align-content: center;
+  }
+}
+
+/* *** WIDTH < 450px *** */
+
+@media (max-width: 410px) {
+  * {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .wrapper {
+    padding: 0;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  
+  .hero {
+    padding: 40px 0;
+    height: 330px;
+    background: url(desired-outcome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* ***TODO*** */
+  /* Fix .text-div. It is not centered inside wrapper */
+
+  .hero .wrapper {
+    padding: 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 30px;
+    justify-self: center;
+    align-self: center;
+  } */
+
+  .title {
+    font-size: 25px;
+  }
+
+  .hero p {
+    max-width: 400px;
+    font-size: 12px;
+  }
+
+  .hero button {
+    margin: 0;
+    background-color: #e5e7eb;
+    color:#3882f6;
+  }
+
+  .illustrations h2 {
+    font-size: 15px;
+    padding-bottom: 15px;
+  }
+
+  .illustrations .wrapper {
+    padding: 0;
+    gap: 5px;
+  }
+
+  blockquote {
+    font-size: 18px;
+  }
 }
