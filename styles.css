@@ -244,9 +244,10 @@ footer p {
   
   .hero {
     padding: 0;
-    background: url(desired-outcome.png);
+    background: url(hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: inset 0px 0px 300px 3px #032044;
   }
 
   .hero .wrapper {
@@ -275,8 +276,6 @@ footer p {
   .hero button {
     margin: 0;
     margin-bottom: 20px;
-    background-color: #e5e7eb;
-    color:#3882f6;
     width: 50%;
   }
 
