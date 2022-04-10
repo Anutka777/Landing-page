@@ -41,6 +41,10 @@ nav a {
   color: #e5e7eb;
 }
 
+nav a:hover {
+  color: #80B0F9;
+}
+
 section {
   padding: 100px 0;
 }
@@ -71,6 +75,11 @@ button {
   background-color: #3882f6;
   color: #e5e7eb;
   font-weight: 900;
+}
+
+button:hover {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset,
+    rgba(255, 255, 255, 0.5) 0px 18px 36px -18px inset;
 }
 
 .hero-image {
